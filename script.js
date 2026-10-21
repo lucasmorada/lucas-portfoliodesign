@@ -1,9 +1,6 @@
-/* Personalize the portfolio here. Use real, current URLs and contact details. */
 const PORTFOLIO_CONFIG = {
-  // Example: 'https://www.youtube.com/watch?v=YOUR_VIDEO_ID'
-  youtubeUrl: '',
-  // Example: 'lucas.seuemail@exemplo.com'
-  email: ''
+  youtubeUrl: 'https://www.youtube.com/watch?v=M5HvDnSOCTE',
+  email: 'lucasgab.siqueira@gmai.com'
 };
 
 const menuToggle = document.querySelector('.menu-toggle');
@@ -84,7 +81,6 @@ if (videoId) {
   const youtubeLink = document.getElementById('youtube-link');
   youtubeLink.href = PORTFOLIO_CONFIG.youtubeUrl;
   youtubeLink.hidden = false;
-  document.querySelector('.pitch-reminder').textContent = 'Vídeo incorporado. Confirme se o acesso está liberado para avaliação.';
 }
 
 const emailLink = document.getElementById('email-link');
