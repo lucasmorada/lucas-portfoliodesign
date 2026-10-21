@@ -1,5 +1,5 @@
 const PORTFOLIO_CONFIG = {
-  youtubeUrl: 'https://www.youtube.com/watch?v=M5HvDnSOCTE',
+  youtubeUrl: 'https://www.youtube.com/watch?v=ZjlHxfCEueU',
   email: 'lucasgab.siqueira@gmai.com'
 };
 
