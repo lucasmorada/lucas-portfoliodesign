@@ -2,3 +2,155 @@
 @media(max-width:800px){.nav{gap:14px}.nav a{font-size:10px}.hero{min-height:610px;grid-template-columns:1fr .7fr}.hero-art{height:350px;margin-left:0}.hero h1{font-size:clamp(40px,6vw,58px)}.art-ring{width:230px;height:230px}.ring-two{width:160px;height:160px}.hero-meta{margin-top:48px}.section-block{padding-top:90px;padding-bottom:90px}.resume-info{padding:35px 7%}.project-feature{gap:24px}.project-visual{height:240px}.project-feature .project-visual{height:300px}.position-grid{grid-template-columns:1fr 1fr}.position-card{padding:22px 18px 25px 0;min-height:250px}.position-card:nth-child(3){border-left:0;padding-left:0;border-top:1px solid #c9c7bc}.position-card:nth-child(4){border-top:1px solid #c9c7bc}.learning-row{grid-template-columns:.9fr 1.2fr 1.2fr 90px;gap:12px}.timeline-item{grid-template-columns:145px 1fr 20px}.skills-strip{grid-template-columns:160px 1fr}}
 @media(max-width:620px){.topline{font-size:7px;padding:0 5%}.site-header{height:65px;padding:0 5%}.menu-toggle{display:flex;width:38px;height:38px;border:1px solid var(--line);background:transparent;align-items:center;justify-content:center;flex-direction:column;gap:5px}.menu-toggle span{width:15px;height:1px;background:var(--ink)}.nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:18px 5% 22px;flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:13px 0;border-bottom:1px solid var(--line);font-size:12px}.nav .nav-contact{border:0;padding:13px 0}.hero{display:flex;flex-direction:column;align-items:stretch;min-height:auto;padding-top:68px;padding-bottom:75px;gap:42px}.hero h1{font-size:clamp(40px,11vw,60px)}.hero-intro{font-size:13px}.hero-art{height:300px;margin:0 0 0 10%;width:90%}.art-ring{width:215px;height:215px}.ring-two{width:150px;height:150px}.hero-meta{margin-top:45px;gap:15px;font-size:8px}.hero-bottom{bottom:19px;font-size:7px}.section-wrap{width:90%}.section-block{padding-top:75px;padding-bottom:75px}.section-heading{margin-bottom:35px}.section-heading h2{font-size:clamp(37px,10vw,52px)}.about-grid{grid-template-columns:1fr;gap:35px}.about-lead p:first-child{font-size:17px}.fact{grid-template-columns:110px 1fr}.skills-strip{grid-template-columns:1fr;gap:15px;margin-top:40px}.resume-inner{padding-top:75px;padding-bottom:75px}.resume-card{grid-template-columns:1fr}.resume-preview{min-height:300px}.resume-info{padding:32px 24px}.resume-buttons{flex-direction:column;align-items:stretch}.heading-row{display:block}.heading-row .section-description{margin-top:20px}.projects-grid{grid-template-columns:1fr;gap:42px}.project-feature{grid-column:auto;display:flex;flex-direction:column;align-items:stretch;gap:22px}.project-feature .project-visual{height:280px}.project-visual{height:250px}.trampei-window{top:55px;height:200px}.window-content{padding:18px}.window-title{font-size:18px}.timeline-item{grid-template-columns:1fr 20px;gap:12px;padding:24px 0}.timeline-time{grid-column:1/-1}.timeline-main{grid-column:1}.timeline-mark{grid-column:2;grid-row:2}.timeline-main h3{font-size:22px}.timeline-outcome{display:block}.timeline-outcome b{display:block;margin-top:7px;line-height:1.6}.career-focus{grid-template-columns:1fr;gap:12px;margin-top:35px;padding:22px}.learning-row{grid-template-columns:1fr 1fr;gap:8px 15px;padding:15px 0}.learning-header{display:none}.learning-name{font-size:12px}.learning-row>span:nth-child(2):before{content:'POR QUÊ: ';font:8px var(--mono);display:block;color:#99998e;margin-bottom:4px}.learning-row>span:nth-child(3):before{content:'AÇÃO: ';font:8px var(--mono);display:block;color:#99998e;margin-bottom:4px}.learning-row>span:nth-child(4){grid-column:2;grid-row:1;justify-self:end}.learning-row>span:nth-child(2),.learning-row>span:nth-child(3){font-size:10px}.position-grid{grid-template-columns:1fr}.position-card,.position-card+.position-card{border-left:0;border-top:1px solid #c9c7bc;padding:20px 0;min-height:0}.position-card:first-child{border-top:0}.position-icon{margin:15px 0}.position-card p{min-height:0;max-width:400px}.pitch-inner{padding-top:75px;padding-bottom:70px}.video-frame{aspect-ratio:4/3;margin-top:30px}.pitch-bottom{flex-wrap:wrap;line-height:1.7}.contact-inner{padding-top:75px;padding-bottom:70px}.contact-inner h2{font-size:clamp(40px,10vw,58px)}.contact-links{flex-direction:column}.contact-links a{width:100%}.footer{padding:18px 5%;gap:10px;font-size:7px}.footer .wordmark{font-size:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+
+/* Apresentação inicial com foto */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: clamp(32px, 6vw, 90px);
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-photo {
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 2px;
+}
+
+.photo-caption {
+  display: block;
+  margin-top: 12px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #77776d;
+}
+
+/* Responsividade */
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-photo {
+    max-width: 340px;
+    width: 100%;
+    justify-self: start;
+  }
+
+  .profile-photo {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+
+/* ========================================
+   ESCALA GERAL DO PORTFÓLIO
+   ======================================== */
+
+html {
+  font-size: 110%;
+}
+
+/* Aproveita melhor a largura da tela */
+.section-wrap {
+  width: min(92%, 1500px);
+}
+
+/* Cabeçalho e navegação */
+.site-header {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.site-header .nav {
+  gap: 28px;
+}
+
+/* Apresentação inicial */
+.hero {
+  gap: clamp(40px, 6vw, 100px);
+  min-height: 80vh;
+}
+
+.hero-photo {
+  max-width: 460px;
+}
+
+.hero-intro {
+  max-width: 680px;
+  line-height: 1.8;
+}
+
+/* Títulos e textos */
+h1 {
+  line-height: 1.08;
+}
+
+h2 {
+  line-height: 1.12;
+}
+
+p {
+  line-height: 1.75;
+}
+
+/* Seções com mais espaço */
+.section-block,
+.resume-inner {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+/* Botões */
+.button {
+  padding: 16px 22px;
+  font-size: 0.95rem;
+}
+
+/* Cartões e conteúdo */
+.resume-card {
+  gap: 36px;
+}
+
+/* Evita exageros em telas menores */
+@media (max-width: 760px) {
+  html {
+    font-size: 100%;
+  }
+
+  .section-wrap {
+    width: 90%;
+  }
+
+  .hero {
+    min-height: auto;
+    gap: 36px;
+  }
+
+  .hero-photo {
+    max-width: 100%;
+  }
+
+  .section-block,
+  .resume-inner {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
