@@ -154,3 +154,32 @@ p {
     padding-bottom: 72px;
   }
 }
+
+/* Ajuste do tamanho da foto de perfil */
+.hero-photo {
+  width: 100%;
+  max-width: 360px;
+  justify-self: end;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 760px) {
+  .hero-photo {
+    max-width: 280px;
+    justify-self: center;
+  }
+
+  .profile-photo {
+    max-width: 280px;
+  }
+}
